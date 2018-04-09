@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <dimen name="qsize">20sp</dimen>
+<dimen name="ansPadding">5dp</dimen>
+<dimen name="message">18sp</dimen>
 
 </resources>

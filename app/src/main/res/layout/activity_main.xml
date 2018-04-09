@@ -11,7 +11,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:orientation="vertical"
@@ -33,10 +33,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="@dimen/ansPadding"
             android:text="@string/q1"
-            android:textSize="@dimen/qsize"
             android:textColor="@color/colorQuestions"
+            android:textSize="@dimen/qsize"
             android:textStyle="bold" />
 
         <CheckBox
@@ -60,7 +60,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="@dimen/ansPadding"
             android:text="@string/q2"
             android:textColor="@color/colorQuestions"
             android:textSize="20sp"
@@ -70,16 +70,15 @@
             android:id="@+id/editTextQ2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Type here"
-
+            android:hint="@string/hint"
             android:inputType="textCapWords"
-            android:textSize="14sp" />
+            android:textSize="@dimen/message" />
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="@dimen/ansPadding"
             android:text="@string/q3"
             android:textColor="@color/colorQuestions"
             android:textSize="@dimen/qsize"
@@ -89,26 +88,26 @@
             android:id="@+id/radioGroupQ3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp">
+            android:padding="@dimen/ansPadding">
 
             <RadioButton
                 android:id="@+id/radioTrue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="True" />
+                android:text="@string/option1" />
 
             <RadioButton
                 android:id="@+id/radioFalse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="False" />
+                android:text="@string/option2" />
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="@dimen/ansPadding"
             android:text="@string/q4"
             android:textColor="@color/colorQuestions"
             android:textSize="@dimen/qsize"
@@ -118,8 +117,8 @@
             android:id="@+id/textViewQ4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scroll to seclect a number..."
-            android:textSize="12sp" />
+            android:text="@string/scroll"
+            android:textSize="@dimen/message" />
 
         <NumberPicker
             android:id="@+id/numberPickerQ4"
@@ -131,7 +130,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="@dimen/ansPadding"
             android:text="@string/q5"
             android:textColor="@color/colorQuestions"
             android:textSize="@dimen/qsize"
@@ -141,19 +140,18 @@
             android:id="@+id/editTextQ5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Type here"
+            android:hint="@string/hint"
             android:inputType="textCapWords"
-            android:textSize="14sp" />
+            android:textSize="@dimen/message" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="@dimen/ansPadding"
             android:text="@string/q6"
-            android:textSize="@dimen/qsize"
-            android:textStyle="bold"
             android:textColor="@color/colorQuestions"
-            />
+            android:textSize="@dimen/qsize"
+            android:textStyle="bold" />
 
 
         <CheckBox
@@ -177,7 +175,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="@dimen/ansPadding"
             android:text="@string/q7"
             android:textColor="@color/colorQuestions"
             android:textSize="@dimen/qsize"
@@ -188,7 +186,7 @@
             android:id="@+id/radioGroupQ7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp">
+            android:padding="@dimen/ansPadding">
 
             <RadioButton
                 android:id="@+id/radioGroupQ7.O1"
@@ -214,7 +212,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="@dimen/ansPadding"
             android:text="@string/q8"
             android:textColor="@color/colorQuestions"
             android:textSize="@dimen/qsize"
@@ -230,7 +228,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="submitAnswers"
-            android:text="Submit Answers"
+            android:text="@string/submit"
             android:textAlignment="center" />
     </LinearLayout>
 </ScrollView>

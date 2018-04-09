@@ -8,6 +8,10 @@
     <string name= "q2">What is the Capital of India?</string>
     <string name= "q3">Capital of Angola is Malabo. </string>
     <string name= "q4">How many times has Nigeria changed its capital? </string>
+    <string name="scroll">Scroll and click to select number</string>
+<string name="hint">Type Here</string>
+<string name ="option1"> True</string>
+<string name="option2">False</string>
     <string name= "q5"> Name the capital of Malta.</string>
     <string name= "q6">Which city is considered capital of Europe? </string>
     <string name= "q6.op1">Amsterdam</string>
@@ -18,4 +22,5 @@
     <string name= "q7.op2">Nairobi</string>
     <string name= "q7.op3">Bujumbura</string>
     <string name= "q8">When was Washington DC declared capital of america </string>
+<string name="submit">Submit Answers</string>
 </resources>
