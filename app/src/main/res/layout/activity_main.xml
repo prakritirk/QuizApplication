@@ -15,7 +15,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:orientation="vertical"
-        android:padding="20dp"
+        android:padding="@dimen/padding_20dp"
         tools:context="com.example.android.quizapplication.MainActivity">
 
 
@@ -31,13 +31,31 @@
 
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ansPadding"
+            android:text="@string/player"
+            android:textAlignment="center"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/qsize"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/playername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/hint"
+            android:inputType="textCapWords"
+            android:textSize="@dimen/message" />
+
+        <TextView
+            android:id="@+id/q1"
+            style="@style/questionTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/ansPadding"
-            android:text="@string/q1"
-            android:textColor="@color/colorQuestions"
-            android:textSize="@dimen/qsize"
-            android:textStyle="bold" />
+            android:text="@string/q1" />
 
         <CheckBox
             android:id="@+id/checkBoxQ1.O1"
@@ -58,31 +76,28 @@
             android:text="@string/q1.op3" />
 
         <TextView
+            android:id="@+id/q2"
+            style="@style/questionTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/ansPadding"
-            android:text="@string/q2"
-            android:textColor="@color/colorQuestions"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="@string/q2" />
 
         <EditText
             android:id="@+id/editTextQ2"
+            style="@style/questionTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/hint"
-            android:inputType="textCapWords"
             android:textSize="@dimen/message" />
 
 
         <TextView
+            android:id="@+id/q3"
+            style="@style/questionTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/ansPadding"
-            android:text="@string/q3"
-            android:textColor="@color/colorQuestions"
-            android:textSize="@dimen/qsize"
-            android:textStyle="bold" />
+            android:text="@string/q3" />
 
         <RadioGroup
             android:id="@+id/radioGroupQ3"
@@ -105,13 +120,12 @@
         </RadioGroup>
 
         <TextView
+            android:id="@+id/q4"
+            style="@style/questionTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/ansPadding"
-            android:text="@string/q4"
-            android:textColor="@color/colorQuestions"
-            android:textSize="@dimen/qsize"
-            android:textStyle="bold" />
+            android:text="@string/q4" />
 
         <TextView
             android:id="@+id/textViewQ4"
@@ -128,13 +142,11 @@
         </NumberPicker>
 
         <TextView
+            android:id="@+id/q5"
+            style="@style/questionTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/ansPadding"
-            android:text="@string/q5"
-            android:textColor="@color/colorQuestions"
-            android:textSize="@dimen/qsize"
-            android:textStyle="bold" />
+            android:text="@string/q5" />
 
         <EditText
             android:id="@+id/editTextQ5"
@@ -142,16 +154,15 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint"
             android:inputType="textCapWords"
+            android:textAllCaps="true"
             android:textSize="@dimen/message" />
 
         <TextView
+            android:id="@+id/q6"
+            style="@style/questionTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/ansPadding"
-            android:text="@string/q6"
-            android:textColor="@color/colorQuestions"
-            android:textSize="@dimen/qsize"
-            android:textStyle="bold" />
+            android:text="@string/q6" />
 
 
         <CheckBox
@@ -173,13 +184,11 @@
             android:text="@string/q6.op3" />
 
         <TextView
+            android:id="@+id/q7"
+            style="@style/questionTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/ansPadding"
-            android:text="@string/q7"
-            android:textColor="@color/colorQuestions"
-            android:textSize="@dimen/qsize"
-            android:textStyle="bold" />
+            android:text="@string/q7" />
 
 
         <RadioGroup
@@ -210,19 +219,19 @@
         </RadioGroup>
 
         <TextView
+            android:id="@+id/q8"
+            style="@style/questionTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/ansPadding"
-            android:text="@string/q8"
-            android:textColor="@color/colorQuestions"
-            android:textSize="@dimen/qsize"
-            android:textStyle="bold" />
+            android:text="@string/q8" />
 
         <DatePicker
             android:id="@+id/DatePickerQ8"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:datePickerMode="spinner"></DatePicker>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:spinnersShown="true" />
 
         <Button
             android:layout_width="match_parent"
